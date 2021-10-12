@@ -1,5 +1,10 @@
 /* Regole generali */
 
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 h2 {
     text-transform: uppercase;
     margin-top: 30px;
@@ -8,7 +13,21 @@ h2 {
 
 .fa-star {
     color: #3a546d;
+    margin: 0 10px;
 }
+
+.my-contenitore-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-barra {
+    height: 3px;
+    width: 80px;
+    background-color: #3a546d;
+}
+
 
 /* CSS relativo all'header con nav */
 
@@ -47,16 +66,32 @@ header .navbar-nav {
     background-color: #3a546d;
 }
 
+
+/* CSS relativo al jumbotron */
+
+#my-jumbotron {
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+#my-jumbotron, #my-jumbotron .fa-star {
+    color: white;
+}
+
+#my-jumbotron img {
+    max-height: 200px;
+}
+
+#my-jumbotron .my-barra {
+    background-color: white;
+}
+
+
+
 /* CSS relativo al portfolio */
 
-.my-flex {
-    display: flex;
-    align-items: center;
-}
-.my-barra {
-    height: 4px;
-    width: 100%;
-    background-color: #3a546d;
+#my-portfolio {
+    margin-bottom: 30px;
 }
 
 .my-contenitore-img {
@@ -70,6 +105,42 @@ main img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
+}
+
+
+/* CSS parte About */
+
+#my-about {
+    padding-bottom: 20px;
+}
+
+#my-about, #my-about h2, #my-about .fa-star {
+    color: white;
+}
+
+#my-about .my-barra {
+    background-color: white;
+}
+
+
+/* CSS parte Contact me */
+
+#my-contact {
+    padding-bottom: 20px;
+}
+
+#my-contact .my-contenitore-flex {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
+.btn-primary:hover {
+    background-color: #14a084;
+    border-color: #14a084;
 }
 
 
