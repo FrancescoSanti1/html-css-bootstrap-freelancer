@@ -26,8 +26,15 @@ h2 {
 
 .my-barra {
     height: 3px;
-    width: 80px;
+    width: 50px;
     background-color: #3a546d;
+}
+
+@media screen and (min-width: 768px) {
+
+    .my-barra {
+        width: 100px;
+    }
 }
 
 
@@ -86,6 +93,10 @@ header .navbar-nav {
     background-color: white;
 }
 
+#my-jumbotron h5 {
+    margin-top: 0.5rem;
+}
+
 
 
 /* CSS relativo al portfolio */
@@ -120,6 +131,22 @@ main img {
 
 #my-about .my-barra {
     background-color: white;
+    width: 30px;
+}
+
+#my-about p {
+    margin-top: 1rem;
+}
+
+#my-about .btn-outline-light:hover {
+    color: #1abc9c;
+}
+
+@media screen and (min-width: 768px) {
+
+    #my-about .my-barra {
+        width: 100px;
+    }
 }
 
 
@@ -127,6 +154,10 @@ main img {
 
 #my-contact {
     padding-bottom: 20px;
+}
+
+#my-contact .my-barra {
+    width: 30px;
 }
 
 #my-contact .my-contenitore-flex {
@@ -141,6 +172,14 @@ main img {
 .btn-primary:hover {
     background-color: #14a084;
     border-color: #14a084;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    #my-contact .my-barra {
+        width: 100px;
+    }
 }
 
 
@@ -174,11 +213,27 @@ footer {
     line-height: 30px;
     border: white 1px solid;
     border-radius: 50%;
-    margin: 0 5px;
 }
 
+#my-footer-top a {
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+#my-footer-top a:hover {
+    color: #1abc9c;
+}
+
+#my-footer-top a:hover i {
+    border-color: #1abc9c;
+}
+
+
 #my-footer-bottom p {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 1rem;
 }
 
