@@ -1,12 +1,45 @@
-header.sfondo {
+/* Regole generali */
+
+h2 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #3a546d;
+}
+
+.fa-star {
+    color: #3a546d;
+}
+
+/* CSS relativo all'header con nav */
+
+header.sfondo, #my-footer-bottom {
     background-color: #2c3e50;
 }
 
-#my-jumbotron {
-    background-color: #1abc9c;
+header .bg-light {
+    background-color: #2c3e50 !important;
 }
 
-#my-about {
+header .navbar-light .navbar-nav .nav-link, header .navbar-light .navbar-brand {
+    color: white;
+    text-transform: uppercase;
+}
+
+header .navbar-light .navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
+header .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+header .navbar-nav {
+    text-align: right;
+}
+
+
+#my-jumbotron, #my-about {
     background-color: #1abc9c;
 }
 
@@ -14,8 +47,29 @@ header.sfondo {
     background-color: #3a546d;
 }
 
-#my-footer-bottom {
-    background-color: #2c3e50;
+/* CSS relativo al portfolio */
+
+.my-flex {
+    display: flex;
+    align-items: center;
+}
+.my-barra {
+    height: 4px;
+    width: 100%;
+    background-color: #3a546d;
+}
+
+.my-contenitore-img {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+main img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
 }
 
 
